@@ -1,5 +1,5 @@
 ## Adventure Next
-Rishabh Jain
+### Rishabh Jain
 
 Personalized adventure gallery curation harnessing the creativity of AI
 
