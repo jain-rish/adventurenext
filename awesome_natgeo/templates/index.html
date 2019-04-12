@@ -1,0 +1,104 @@
+
+{% extends "layout.html" %}
+
+
+{% block head %}
+<title> Adventure NEXT </title>
+{% endblock %}
+
+{% block body %}
+
+
+<div class="container">
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <h3 class="text-muted">Adventure NEXT is personalizing adventures, harnessing the creativity of artificial neural networks </p>
+</h3>
+       <ul class="navbar-default nav-justified">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="https://www.linkedin.com/in/rjainusc/" target="_blank">About Me</a></li>
+        <li><a href="http://www.github.com/jain-rish/unet" target="_blank">Adventure NEXT Github Page</a></li>
+        <li><a href="#">Contact</a></li>
+       </ul>
+ </div>      
+ </div>
+
+
+    <!-- Logo -->
+    <div class="row top2bottom2">
+      <div class="col-lg-4 col-md-4"></div>
+    
+      <div class="col-lg-4 col-md-4 center-block">
+        <img class='center-block img-responsive' src="/static/img/adventurenext_logo.jpg"/ max-width='50%';>
+      </div>
+
+      <div class="col-lg-4 col-md-4"></div>
+
+    </div>
+
+    <!-- Form -->
+    <div class="container">
+
+      <div class="row">
+
+          <div class="col-xl-4 col-lg-4"></div>
+
+          <div class="col-xl-4 col-lg-4 text-center">
+
+            <form method = "POST" action='/' enctype = "multipart/form-data">
+              <div class="input-group">
+              <span class="input-group-btn">
+                <button class="btn btn-primary" type="submit" style="horizontal-align: middle">Find!</button>
+              </span>
+              <input type = "file" name = "file" placeholder="Upload art...">
+            </div><!-- /input-group -->
+          </form>
+        </div>
+
+     <p id = "instructions" class="text-center"> Upload a photo of adventure you love, or choose an example from the gallery below. Your personal gallery will be created instantly.</p>
+    </div>
+
+
+
+<div class="row">
+	<div class="column">
+	  <form method="POST" action="/example1">
+	    <input type="image" src="/static/img/example1.jpg", name="image" value="/static/img/example-art.jpg">
+	  </form>
+      <form method="POST" action="/example2">
+        <input type="image" src="/static/img/example2.jpg", name="image" value="/static/img/example-art.jpg">
+      </form>
+       <form method="POST" action="/example3">
+        <input type="image" src="/static/img/example3.jpg", name="image" value="/static/img/example-art.jpg">
+      </form>
+	</div>
+	<div class="column">
+	  <form method="POST" action="/example4">
+	    <input type="image" src="/static/img/example4.jpg", name="image" value="/static/img/example-art.jpg">
+	  </form>
+	  <form method="POST" action="/example5">
+	    <input type="image" src="/static/img/example5.jpg", name="image" value="/static/img/example-art.jpg">
+	  </form>
+	   <form method="POST" action="/example6">
+	    <input type="image" src="/static/img/example6.jpg", name="image" value="/static/img/example-art.jpg">
+	  </form>
+	</div>
+    <div class="column">
+	  <form method="POST" action="/example7">
+	    <input type="image" src="/static/img/example7.jpg", name="image" value="/static/img/example-art.jpg">
+	  </form>
+      <form method="POST" action="/example8">
+        <input type="image" src="/static/img/example8.jpg", name="image" value="/static/img/example-art.jpg">
+      </form>
+       <form method="POST" action="/example9">
+        <input type="image" src="/static/img/example9.jpg", name="image" value="/static/img/example-art.jpg">
+      </form>
+  </div>
+</div>
+
+
+</body>
+
+<script type="text/javascript" src="/static/js/index.js"></script>
+
+
+{% endblock %}

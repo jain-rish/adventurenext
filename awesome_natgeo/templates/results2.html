@@ -1,0 +1,213 @@
+{% extends "layout.html" %}
+
+
+{% block head %}
+<title> Art Muse </title>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+{% block body %}
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="/">Art Muse</a></li>
+        <li><a href="https://www.linkedin.com/in/adampallus/" target="_blank">About Me</a></li>
+        <li><a href="http://www.github.com/adampallus/artmagic" target="_blank">ArtMuse Github Page</a></li>
+        <li><a href="https://docs.google.com/presentation/d/1x21zJZzAL3DlFL3KI4l6KDcuTBYtX4fJmXw7FKRFJNw/edit?usp=sharing" target="_blank">Slideshow</a></li>
+        <li><a href="https://youtu.be/Ty6CCc0NEWw" target="_blank"> Video Demo <span class="sr-only">(current)</span></a></li>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+
+
+
+
+  <div class="col-lg-4 col-xs-12">
+  <form method="POST" action='/' enctype = "multipart/form-data">
+    <div class="input-group">
+      <span class="input-group-btn">
+        <button class="btn-lg btn-primary" input type="submit">Find!</button>
+      </span>
+      <input type = "file" name = "file">
+
+
+    </div><!-- /input-group -->
+    </form>
+  </div><!-- /.col-lg-6 -->
+</nav>
+<!-- Background image -->
+<!--body background='/static/img/success.png' height='100%'-->
+
+<div class="row">
+  <div class="column">
+    <a href={{matches['linkurl'][0]}} target="_blank">
+      <img src={{matches['image_url'][0]}} title={{matches['art_title'][0]}}>
+    </a>
+    <a href={{matches['linkurl'][1]}} target="_blank">
+      <img src={{matches['image_url'][1]}} title={{matches['art_title'][1]}}>
+    </a>
+  </div>
+  <div class="column">
+    <a href={{original}} target="_blank">
+      <img class="userpic" src={{original}}>
+    </a>
+    <a href={{matches['linkurl'][2]}} target="_blank">
+      <img src={{matches['image_url'][2]}} title={{matches['art_title'][2]}}>
+    </a>
+
+  </div>
+  <div class="column">
+    <a href={{matches['linkurl'][3]}} target="_blank">
+      <img src={{matches['image_url'][3]}} title={{matches['art_title'][3]}}>
+    </a>
+    <a href={{matches['linkurl'][4]}} target="_blank">
+      <img src={{matches['image_url'][4]}} title={{matches['art_title'][4]}}>
+    </a>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <a href={{matches['linkurl'][5]}} target="_blank">
+      <img src={{matches['image_url'][5]}} title={{matches['art_title'][5]}}>
+    </a>
+    <a href={{matches['linkurl'][6]}} target="_blank">
+      <img src={{matches['image_url'][6]}} title={{matches['art_title'][6]}}>
+    </a>
+  </div>
+  <div class="column">
+    <a href={{matches['linkurl'][7]}} target="_blank">
+      <img src={{matches['image_url'][7]}} title={{matches['art_title'][7]}}>
+    </a>
+    <a href={{matches['linkurl'][8]}} target="_blank">
+      <img src={{matches['image_url'][8]}} title={{matches['art_title'][8]}}>
+    </a>
+  </div>
+  <div class="column">
+    <a href={{matches['linkurl'][9]}} target="_blank">
+      <img src={{matches['image_url'][9]}} title={{matches['art_title'][9]}}>
+    </a>
+    <a href={{matches['linkurl'][10]}} target="_blank">
+      <img src={{matches['image_url'][10]}} title={{matches['art_title'][10]}}>
+    </a>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <a href={{matches['linkurl'][11]}} target="_blank">
+      <img src={{matches['image_url'][11]}} title={{matches['art_title'][11]}}>
+    </a>
+    <a href={{matches['linkurl'][12]}} target="_blank">
+      <img src={{matches['image_url'][12]}} title={{matches['art_title'][12]}}>
+    </a>
+  </div>
+  <div class="column">
+    <a href={{matches['linkurl'][13]}} target="_blank">
+      <img src={{matches['image_url'][13]}} title={{matches['art_title'][13]}}>
+    </a>
+    <a href={{matches['linkurl'][14]}} target="_blank">
+      <img src={{matches['image_url'][14]}} title={{matches['art_title'][14]}}>
+    </a>
+  </div>
+  <div class="column">
+    <a href={{matches['linkurl'][15]}} target="_blank">
+      <img src={{matches['image_url'][15]}} title={{matches['art_title'][15]}}>
+    </a>
+    <a href={{matches['linkurl'][16]}} target="_blank">
+      <img src={{matches['image_url'][16]}} title={{matches['art_title'][16]}}>
+    </a>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <a href={{matches['linkurl'][17]}} target="_blank">
+      <img src={{matches['image_url'][17]}} title={{matches['art_title'][17]}}>
+    </a>
+    <a href={{matches['linkurl'][18]}} target="_blank">
+      <img src={{matches['image_url'][18]}} title={{matches['art_title'][18]}}>
+    </a>
+  </div>
+  <div class="column">
+    <a href={{matches['linkurl'][19]}} target="_blank">
+      <img src={{matches['image_url'][19]}} title={{matches['art_title'][19]}}>
+    </a>
+    <a href={{matches['linkurl'][20]}} target="_blank">
+      <img src={{matches['image_url'][20]}} title={{matches['art_title'][20]}}>
+    </a>
+  </div>
+  <div class="column">
+    <a href={{matches['linkurl'][21]}} target="_blank">
+      <img src={{matches['image_url'][21]}} title={{matches['art_title'][21]}}>
+    </a>
+    <a href={{matches['linkurl'][22]}} target="_blank">
+      <img src={{matches['image_url'][22]}} title={{matches['art_title'][22]}}>
+    </a>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <a href={{matches['linkurl'][23]}} target="_blank">
+      <img src={{matches['image_url'][23]}} title={{matches['art_title'][23]}}>
+    </a>
+    <a href={{matches['linkurl'][24]}} target="_blank">
+      <img src={{matches['image_url'][24]}} title={{matches['art_title'][24]}}>
+    </a>
+  </div>
+  <div class="column">
+    <a href={{matches['linkurl'][25]}} target="_blank">
+      <img src={{matches['image_url'][25]}} title={{matches['art_title'][25]}}>
+    </a>
+    <a href={{matches['linkurl'][26]}} target="_blank">
+      <img src={{matches['image_url'][26]}} title={{matches['art_title'][26]}}>
+    </a>
+  </div>
+  <div class="column">
+    <a href={{matches['linkurl'][27]}} target="_blank">
+      <img src={{matches['image_url'][27]}} title={{matches['art_title'][27]}}>
+    </a>
+    <a href={{matches['linkurl'][28]}} target="_blank">
+      <img src={{matches['image_url'][28]}} title={{matches['art_title'][28]}}>
+    </a>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <a href={{matches['linkurl'][29]}} target="_blank">
+      <img src={{matches['image_url'][29]}} title={{matches['art_title'][29]}}>
+    </a>
+    <a href={{matches['linkurl'][30]}} target="_blank">
+      <img src={{matches['image_url'][30]}} title={{matches['art_title'][30]}}>
+    </a>
+  </div>
+  <div class="column">
+    <a href={{matches['linkurl'][31]}} target="_blank">
+      <img src={{matches['image_url'][31]}} title={{matches['art_title'][31]}}>
+    </a>
+    <a href={{matches['linkurl'][32]}} target="_blank">
+      <img src={{matches['image_url'][32]}} title={{matches['art_title'][32]}}>
+    </a>
+  </div>
+  <div class="column">
+    <a href={{matches['linkurl'][33]}} target="_blank">
+      <img src={{matches['image_url'][33]}} title={{matches['art_title'][33]}}>
+    </a>
+    <a href={{matches['linkurl'][34]}} target="_blank">
+      <img src={{matches['image_url'][34]}} title={{matches['art_title'][34]}}>
+    </a>
+  </div>
+</div>
+
+</body>
+
+<script type="text/javascript" src="/static/js/index.js"></script>
+
+
+{% endblock %}

@@ -1,0 +1,120 @@
+
+{% extends "layout.html" %}
+
+
+{% block head %}
+<title> Art Network </title>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+{% block body %}
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="/">ART MAGIC</a></li>
+        <li><a href="http://www.google.com">About Me</a></li>
+        <li><a href="http://www.github.com/adampallus/artnetwork">Artnetwork Github Page</a></li>
+        <li><a href="http://www.google.com"> How does it work? <span class="sr-only">(current)</span></a></li>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!-- Background image -->
+<!--body background='/static/img/background.png' height='100%'-->
+
+
+
+    <!-- <div class='vertical-center'> -->
+
+
+
+    <!-- Logo -->
+    <div class="row top10bottom2">
+      <div class="col-lg-4 col-md-4"></div>
+
+      <div class="col-lg-4 col-md-4 center-block">
+        <img class='center-block img-responsive' src="/static/img/validate-logo.jpg"/ max-width='50%';>
+      </div>
+
+      <div class="col-lg-4 col-md-4"></div>
+
+    </div>
+
+
+    <!-- Form -->
+    <div class="container">
+
+      <div class="row">
+
+          <div class="col-xl-4 col-lg-4"></div>
+
+          <div class="col-xl-4 col-lg-4 text-center">
+
+            <form method = "POST" action='/validate' enctype = "multipart/form-data">
+              <div class="input-group">
+              <span class="input-group-btn">
+                <button class="btn btn-primary" type="submit">Find!</button>
+              </span>
+              <input type = "file" name = "file" placeholder="Upload art...">
+            </div><!-- /input-group -->           
+          </form>
+        </div>
+
+     <p id = "instructions" class="text-center"> Choose an example from the gallery below, or upload your own work of art!</p>
+    </div>
+
+
+<div class="row">
+  <div class="column">
+    <form method="POST" action="/example1val">
+      <input type="image" src="/static/img/example1.jpg", name="image" value="/static/img/example-art.jpg">
+    </form>
+      <form method="POST" action="/example2val">
+        <input type="image" src="/static/img/example2.jpg", name="image" value="/static/img/example-art.jpg">
+      </form>
+       <form method="POST" action="/example3val">
+        <input type="image" src="/static/img/example3.jpg", name="image" value="/static/img/example-art.jpg">
+      </form>                   
+  </div>
+  <div class="column">
+    <form method="POST" action="/example4val">
+      <input type="image" src="/static/img/example4.jpg", name="image" value="/static/img/example-art.jpg">
+    </form>
+    <form method="POST" action="/example5val">
+      <input type="image" src="/static/img/example5.jpg", name="image" value="/static/img/example-art.jpg">
+    </form>
+     <form method="POST" action="/example6val">
+      <input type="image" src="/static/img/example6.jpg", name="image" value="/static/img/example-art.jpg">
+    </form>                   
+  </div>
+    <div class="column">
+    <form method="POST" action="/example7val">
+      <input type="image" src="/static/img/example7.jpg", name="image" value="/static/img/example-art.jpg">
+    </form>
+      <form method="POST" action="/example8val">
+        <input type="image" src="/static/img/example8.jpg", name="image" value="/static/img/example-art.jpg">
+      </form>
+       <form method="POST" action="/example9val">
+        <input type="image" src="/static/img/example9.jpg", name="image" value="/static/img/example-art.jpg">
+      </form>                   
+  </div>
+</div>
+
+
+
+</body>
+
+<script type="text/javascript" src="/static/js/index.js"></script>
+
+
+{% endblock %}
