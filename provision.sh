@@ -1,5 +1,11 @@
 #!/bin/bash
 
+"""
+Created on Wed Jun 13 09:55:13 2018
+
+@author: rishabh
+"""
+
 sudo apt-get update
 sudo apt-get install -y python
 sudo apt-get install nginx
