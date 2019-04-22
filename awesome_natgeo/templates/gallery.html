@@ -49,18 +49,39 @@
     
     <div class="row">
         <div class="col-lg-12">
-            <h2 class="page-header">Where are you adventuring next? </h2>
+            <h2 class="page-header">What do you think of the follwing matches?</h2>
         </div>
         
-        {% for i in range(30) %}
+        {% for i in range(20) %}
         <a href={{matches['instagram_url'][i]}} target="_blank">
         <div class="col-lg-4 col-md-4 col-xs-4 thumb">
             <img class="img-responsive" src=" {{matches['image_url'][i]}}">
             <span> {{matches['linkurl'][i]}} </span>
+            
+                <div>
+                    <a class="btn btn-danger" href="https://www.instagram.com/{{matches['artist_info'][i][1:]}}" > 
+                            {{matches['artist_info'][i][1:]}} </a>
+                </div>
+                <div class="btn-group">
+                        {% for j in matches['art_title'][i].split(',') %}
+                            <a class="btn btn-info" href="https://www.instagram.com/explore/tags/{{j[2:-1].replace("'","")}}" > 
+                            {{j[2:-1].replace("'","")}} </a>
+                        {% endfor %}
+                </div>
+
         </div>
-        {% endfor %}
+    {% endfor %}
     </div>
 </div>
+
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Rishabh Jain 2019</p>
+    </div>
+    <!-- /.container -->
+</footer>
+
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
         integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
         crossorigin="anonymous"></script>

@@ -241,3 +241,171 @@ def chose_mine():
         user_image = flask.request.form['submit']
         save_validation_result(1,user_image)
         return flask.render_template('validate.html')
+
+@app.route("/example1", methods= ['GET', 'POST'])
+def show_example():
+    method = flask.request.method
+    if method == 'GET':
+        return flask.render_template('index.html')
+    if method == 'POST':
+        demo_image="awesome_natgeo/static/img/example1.jpg"
+        return(show_results(demo_image,rotate_image=False)) 
+    return flask.redirect(flask.request.url)
+
+@app.route("/example2", methods= ['GET', 'POST'])
+def show_example2():
+    method = flask.request.method
+    if method == 'GET':
+        return flask.render_template('index.html')
+    if method == 'POST':
+        demo_image="awesome_natgeo/static/img/example2.jpg"
+        return(show_results(demo_image,rotate_image=False)) 
+    return flask.redirect(flask.request.url)
+@app.route("/example3", methods= ['GET', 'POST'])
+def show_example3():
+    method = flask.request.method
+    if method == 'GET':
+        return flask.render_template('index.html')
+    if method == 'POST':
+        demo_image="awesome_natgeo/static/img/example3.jpg"
+        return(show_results(demo_image,rotate_image=False)) 
+    return flask.redirect(flask.request.url)
+@app.route("/example4", methods= ['GET', 'POST'])
+def show_example4():
+    method = flask.request.method
+    if method == 'GET':
+        return flask.render_template('index.html')
+    if method == 'POST':
+        demo_image="awesome_natgeo/static/img/example4.jpg"
+        return(show_results(demo_image,rotate_image=False)) 
+    return flask.redirect(flask.request.url)
+@app.route("/example5", methods= ['GET', 'POST'])
+def show_example5():
+    method = flask.request.method
+    if method == 'GET':
+        return flask.render_template('index.html')
+    if method == 'POST':
+        demo_image="awesome_natgeo/static/img/example5.jpg"
+        return(show_results(demo_image,rotate_image=False)) 
+    return flask.redirect(flask.request.url)
+@app.route("/example6", methods= ['GET', 'POST'])
+def show_example6():
+    method = flask.request.method
+    if method == 'GET':
+        return flask.render_template('index.html')
+    if method == 'POST':
+        demo_image="awesome_natgeo/static/img/example6.jpg"
+        return(show_results(demo_image,rotate_image=False)) 
+    return flask.redirect(flask.request.url)
+@app.route("/example7", methods= ['GET', 'POST'])
+def show_example7():
+    method = flask.request.method
+    if method == 'GET':
+        return flask.render_template('index.html')
+    if method == 'POST':
+        demo_image="awesome_natgeo/static/img/example7.jpg"
+        return(show_results(demo_image,rotate_image=False)) 
+    return flask.redirect(flask.request.url)
+@app.route("/example8", methods= ['GET', 'POST'])
+def show_example8():
+    method = flask.request.method
+    if method == 'GET':
+        return flask.render_template('index.html')
+    if method == 'POST':
+
+        demo_image="awesome_natgeo/static/img/example8.jpg"
+        return(show_results(demo_image,rotate_image=False)) 
+    return flask.redirect(flask.request.url)
+@app.route("/example9", methods= ['GET', 'POST'])
+def show_example9():
+    method = flask.request.method
+    if method == 'GET':
+        return flask.render_template('index.html')
+    if method == 'POST':
+        demo_image="awesome_natgeo/static/img/example9.jpg"
+        return(show_results(demo_image,rotate_image=False)) 
+    return flask.redirect(flask.request.url)
+
+'''VALIDATION DEMOS'''
+@app.route("/example1val", methods= ['GET', 'POST'])
+def show_exampleval():
+    method = flask.request.method
+    if method == 'GET':
+        return flask.render_template('index.html')
+    if method == 'POST':
+        demo_image="awesome_natgeo/static/img/example1.jpg"
+        return(show_results_validation(demo_image,rotate_image=False)) 
+    return flask.redirect(flask.request.url)
+@app.route("/example2val", methods= ['GET', 'POST'])
+def show_example2val():
+    method = flask.request.method
+    if method == 'GET':
+        return flask.render_template('index.html')
+    if method == 'POST':
+        demo_image="awesome_natgeo/static/img/example2.jpg"
+        return(show_results_validation(demo_image,rotate_image=False)) 
+    return flask.redirect(flask.request.url)
+@app.route("/example3val", methods= ['GET', 'POST'])
+def show_example3val():
+    method = flask.request.method
+    if method == 'GET':
+        return flask.render_template('index.html')
+    if method == 'POST':
+        demo_image="awesome_natgeo/static/img/example3.jpg"
+        return(show_results_validation(demo_image,rotate_image=False)) 
+    return flask.redirect(flask.request.url)
+@app.route("/example4val", methods= ['GET', 'POST'])
+def show_example4val():
+    method = flask.request.method
+    if method == 'GET':
+        return flask.render_template('index.html')
+    if method == 'POST':
+        demo_image="awesome_natgeo/static/img/example4.jpg"
+        return(show_results_validation(demo_image,rotate_image=False)) 
+    return flask.redirect(flask.request.url)
+@app.route("/example5val", methods= ['GET', 'POST'])
+def show_example5val():
+    method = flask.request.method
+    if method == 'GET':
+        return flask.render_template('index.html')
+    if method == 'POST':
+        demo_image="awesome_natgeo/static/img/example5.jpg"
+        return(show_results_validation(demo_image,rotate_image=False)) 
+    return flask.redirect(flask.request.url)
+@app.route("/example6val", methods= ['GET', 'POST'])
+def show_example6val():
+    method = flask.request.method
+    if method == 'GET':
+        return flask.render_template('index.html')
+    if method == 'POST':
+        demo_image="awesome_natgeo/static/img/example6.jpg"
+        return(show_results_validation(demo_image,rotate_image=False)) 
+    return flask.redirect(flask.request.url)
+@app.route("/example7val", methods= ['GET', 'POST'])
+def show_example7val():
+    method = flask.request.method
+    if method == 'GET':
+        return flask.render_template('index.html')
+    if method == 'POST':
+        demo_image="awesome_natgeo/static/img/example7.jpg"
+        return(show_results_validation(demo_image,rotate_image=False)) 
+    return flask.redirect(flask.request.url)
+@app.route("/example8val", methods= ['GET', 'POST'])
+def show_example8val():
+    method = flask.request.method
+    if method == 'GET':
+        return flask.render_template('index.html')
+    if method == 'POST':
+
+        demo_image="awesome_natgeo/static/img/example8.jpg"
+        return(show_results_validation(demo_image,rotate_image=False)) 
+    return flask.redirect(flask.request.url)
+@app.route("/example9val", methods= ['GET', 'POST'])
+def show_example9val():
+    method = flask.request.method
+    if method == 'GET':
+        return flask.render_template('index.html')
+    if method == 'POST':
+        demo_image="awesome_natgeo/static/img/example9.jpg"
+        return(show_results_validation(demo_image,rotate_image=False)) 
+    return flask.redirect(flask.request.url)
